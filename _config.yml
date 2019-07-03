@@ -1,22 +1,22 @@
-title: Chris Bobbe
-subtitle: Web Developer
-description: Website and portfolio of Chris Bobbe, front-end web developer.
+title: Luis Rozo
+subtitle: Software Engineer
+description: Personal website of Luis Rozo.
 
-author: Chris Bobbe
-email: csbobbe@gmail.com
-avatar: assets/images/avatar.jpg
+author: Luis Rozo
+email: luisgonzagarozo@gmail.com
+avatar: assets/images/avatar.png
 
 baseurl: ""
-url: "https://chrisbobbe.github.io"
+url: "https://luisrozo.github.io"
 
 # Social settings
-facebook_url: https://www.facebook.com/chris.bobbe
-github_url: https://github.com/chrisbobbe
-linkedin_url: https://www.linkedin.com/in/chrisbobbe1995/
-twitter_url: https://twitter.com/chrisbobbe
+#facebook_url: https://www.facebook.com/chris.bobbe
+github_url: https://github.com/luisrozo
+linkedin_url: https://www.linkedin.com/in/luis-gonzaga-rozo-bueno-0299b7166/
+twitter_url: https://twitter.com/luisrozo96
 
 # SEO settiongs
-google_analytics: UA-112211352-1
+#google_analytics: UA-112211352-1
 
 # Build settings
 remote_theme: chrisbobbe/jekyll-theme-prologue

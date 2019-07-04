@@ -1,3 +1,41 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-07-03T16:56:02+02:00</updated><id>http://localhost:4000/</id><title type="html">Luis Rozo</title><subtitle>Personal website of Luis Rozo.</subtitle><author><name>Luis Rozo</name></author><entry><title type="html">First post</title><link href="http://localhost:4000/2019/07/03/first-post.html" rel="alternate" type="text/html" title="First post" /><published>2019-07-03T00:00:00+02:00</published><updated>2019-07-03T00:00:00+02:00</updated><id>http://localhost:4000/2019/07/03/first-post</id><content type="html" xml:base="http://localhost:4000/2019/07/03/first-post.html">&lt;p&gt;Welcome to the first post of my personal web page’s blog! As of now, I’ll be publishing whatever I consider interesting to be in this place. Hope you enjoy!&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-07-04T10:07:58+02:00</updated><id>http://localhost:4000/</id><title type="html">Luis Rozo</title><subtitle>Personal website of Luis Rozo.</subtitle><author><name>Luis Rozo</name></author><entry><title type="html">Aplicación descentralizada basada en Ethereum para la compra venta de datos personales</title><link href="http://localhost:4000/2019/07/04/ethereum-dapp.html" rel="alternate" type="text/html" title="Aplicación descentralizada basada en Ethereum para la compra venta de datos personales" /><published>2019-07-04T00:00:00+02:00</published><updated>2019-07-04T00:00:00+02:00</updated><id>http://localhost:4000/2019/07/04/ethereum-dapp</id><content type="html" xml:base="http://localhost:4000/2019/07/04/ethereum-dapp.html">&lt;p&gt;I’m going to talk about this project, which represents the final project of my degree.&lt;/p&gt;
+
+&lt;p&gt;I developed a decentralized application (or dApp) based on &lt;strong&gt;blockchain&lt;/strong&gt;, especially using Ethereum ecosystem. Other technologies were used too, such as ReactJS, IPFS, etc.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/myproject_eth1.png&quot; style=&quot;display: block; margin: auto; max-width:80%; height:auto; &quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;general-information&quot;&gt;General information&lt;/h2&gt;
+
+&lt;p&gt;This project aims to prove that, using modern technologies, the problematic of personal data can be solved in any ambit. However, this project is focused on medical paradigmatic case. Users can validate their own medical data, in order to be sold through the platform. Others users will be able to buy (using &lt;em&gt;Ether&lt;/em&gt; as coin) batches (known in the platform as &lt;em&gt;offers&lt;/em&gt;) of users registers in order to gain access to that information. This batches are created by the custodian entity (which could be a hospital in a real world situation). Each purchase will create a block in the blockchain, registring all activity in the system.&lt;/p&gt;
+
+&lt;h2 id=&quot;storing-information-on-chain--off-chain&quot;&gt;Storing information: on-chain &amp;amp; off-chain&lt;/h2&gt;
+
+&lt;p&gt;Not all information is stored on the blockchain (this would be extremly non-viable as explained later). This project uses the InterPlanetary File System, aka IPFS, to store the rest of information in a decentralized way (too).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/myproject_eth2.png&quot; style=&quot;display: block; margin: auto; max-width:80%; height:auto; &quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There’s some files in the offer creation process which are stored on IPFS. We only store in the blockchain the final IPFS hash, which links to the rest of this files chain.&lt;/p&gt;
+
+&lt;h2 id=&quot;why-ipfs&quot;&gt;Why IPFS?&lt;/h2&gt;
+
+&lt;p&gt;Let’s make some estimate, bearing in mind that storing 8 bytes has a cost of 20,000 gas; having each gas an equivalent of 4 gwei.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A 8 bytes transaction for 20,000 gas x 4 gwei/gas =&amp;gt; 8 bytes would cost 80,000 gwei.&lt;/li&gt;
+  &lt;li&gt;So, talking about kB instead of B, it would cost 10,000,000 of gwei (or ,01 Ether).&lt;/li&gt;
+  &lt;li&gt;,01 ETH/kB x 1,000 kB =&amp;gt; 10 ETH para almacenar 1 Mb.&lt;/li&gt;
+  &lt;li&gt;Nowdays, an Ether is aprox. €164, so storing 1 Mb of information in a blockchain would cost €1,640.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;With all this information, we can see clearly that, storing 1 GB of information (a very little amount nowadays) in a blockchain would cost &lt;strong&gt;€1,640,000&lt;/strong&gt;!! (OMG). So, blockchain and IPFS are a very common couple in this ecosystem.&lt;/p&gt;
+
+&lt;h2 id=&quot;more-information&quot;&gt;More information&lt;/h2&gt;
+
+&lt;p&gt;This project was presented on June 25, 2019 in the Escuela Superior de Ingeniería at Universidad de Cádiz, obtaining the highest score (10/10). If you are interested in knowing the details around this project, you can visit the following links:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://drive.google.com/file/d/1_DnLsGQUuMttBdkgs425984ZnpjjX-s0/view?usp=sharing&quot;&gt;Project documentation&lt;/a&gt;: a 129 page document explaining with all details all about this project.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/luisrozo/MedicalDataMarket&quot;&gt;GitHub repository&lt;/a&gt;: check how technologies such as blockchain, IPFS and ReactJS live together in a same system.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Luis</name></author><summary type="html">I’m going to talk about this project, which represents the final project of my degree.</summary></entry><entry><title type="html">First post</title><link href="http://localhost:4000/2019/07/03/first-post.html" rel="alternate" type="text/html" title="First post" /><published>2019-07-03T00:00:00+02:00</published><updated>2019-07-03T00:00:00+02:00</updated><id>http://localhost:4000/2019/07/03/first-post</id><content type="html" xml:base="http://localhost:4000/2019/07/03/first-post.html">&lt;p&gt;Welcome to the first post of my personal web page’s blog! As of now, I’ll be publishing whatever I consider interesting to be in this place. Hope you enjoy!&lt;/p&gt;
 
 &lt;p&gt;These days I’ll be adding content to the website, such as projects, hobbies, etc.&lt;/p&gt;</content><author><name>Luis</name></author><summary type="html">Welcome to the first post of my personal web page’s blog! As of now, I’ll be publishing whatever I consider interesting to be in this place. Hope you enjoy!</summary></entry></feed>

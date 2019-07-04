@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<!--
+Prologue by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+Jekyll integration by Chris Bobbe | chrisbobbe.github.io
+-->
+<html><head><!-- Robots -->
+  <meta name="robots" content="index, follow" /><link rel="canonical" href="http://localhost:4000/2019/07/04/ethereum-dapp.html" /><!-- Title, description, author --><title>Aplicación descentralizada basada en Ethereum para la compra venta de datos personales | Luis Rozo - Software Engineer</title>
+  <meta name="description" content="Personal website of Luis Rozo." />
+  <meta name="author" content="Luis Rozo" />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Aplicación descentralizada basada en Ethereum para la compra venta de datos personales | Luis Rozo - Software Engineer" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="http://localhost:4000/assets/images/avatar.png" />
+  <meta property="og:url" content="http://localhost:4000/2019/07/04/ethereum-dapp.html" />
+  <meta property="og:site_name" content="Luis Rozo" />
+  <meta property="og:description" content="Personal website of Luis Rozo." />
+  
+  <!-- Styles -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js" defer></script><![endif]-->
+  <link rel="stylesheet" href="/assets/css/main.css" />
+  <!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css" /><![endif]-->
+  <!--[if lte IE 9]><link rel="stylesheet" href="/assets/css/ie9.css" /><![endif]-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" defer></script>
+  <script src="/assets/js/jquery.scrolly.min.js" defer></script>
+  <script src="/assets/js/jquery.scrollzer.min.js" defer></script>
+  <script src="/assets/js/skel.min.js" defer></script>
+  <script src="/assets/js/util.js" defer></script>
+  <!--[if lte IE 8]><script src="/assets/js/ie/respond.min.js" defer></script><![endif]-->
+  <script src="/assets/js/main.js" defer></script>
+
+</head><body><!-- Header -->
+<div id="header">
+  <div class="top"><!-- Logo -->
+<div id="logo">
+  <a href="http://localhost:4000/" id="home-link">
+    <span class="image avatar48"><img src="/assets/images/avatar.png" alt="Avatar of Luis Rozo" /></span>
+    <h1 id="title">Luis Rozo</h1>
+    <p>Software Engineer</p>
+  </a>
+</div><!-- Nav -->
+<nav id="nav">
+  <ul><li><a href="http://localhost:4000/" id="home-link">
+            <span class="icon fa-home">Home</span>
+          </a></li><li><a href="http://localhost:4000/blog.html" id="luis-s-blog-link">
+            <span class="icon fa-pencil">Luis's Blog</span>
+          </a></li><li><a href="http://localhost:4000/skills" id="my-skills-link">
+            <span class="icon fa-graduation-cap">My Skills</span>
+          </a></li></ul>
+</nav></div>
+  <div class="bottom"><!-- Social Icons -->
+<ul class="icons"><li><a href="https://twitter.com/luisrozo96" class="icon-b fa-twitter"><span class="label">Twitter</span></a></li><li><a href="https://www.linkedin.com/in/luis-gonzaga-rozo-bueno-0299b7166/" class="icon-b fa-linkedin-in"><span class="label">LinkedIn</span></a></li><li><a href="https://github.com/luisrozo" class="icon-b fa-github"><span class="label">GitHub</span></a></li><li><a href="mailto:luisgonzagarozo@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li></ul>
+</div>
+</div>
+<!-- Main -->
+<div id="main">
+	<!-- Post -->
+	<article class="shade-two">
+	  <div class="container">
+			<header>
+				<h2>Aplicación descentralizada basada en Ethereum para la compra venta de datos personales</h2>
+				<p>Luis, 04 July 2019</p>
+			</header><p>I’m going to talk about this project, which represents the final project of my degree.</p>
+
+<p>I developed a decentralized application (or dApp) based on <strong>blockchain</strong>, especially using Ethereum ecosystem. Other technologies were used too, such as ReactJS, IPFS, etc.</p>
+
+<p><img src="http://localhost:4000/assets/images/myproject_eth1.png" style="display: block; margin: auto; max-width:80%; height:auto; " /></p>
+
+<h2 id="general-information">General information</h2>
+
+<p>This project aims to prove that, using modern technologies, the problematic of personal data can be solved in any ambit. However, this project is focused on medical paradigmatic case. Users can validate their own medical data, in order to be sold through the platform. Others users will be able to buy (using <em>Ether</em> as coin) batches (known in the platform as <em>offers</em>) of users registers in order to gain access to that information. This batches are created by the custodian entity (which could be a hospital in a real world situation). Each purchase will create a block in the blockchain, registring all activity in the system.</p>
+
+<h2 id="storing-information-on-chain--off-chain">Storing information: on-chain &amp; off-chain</h2>
+
+<p>Not all information is stored on the blockchain (this would be extremly non-viable as explained later). This project uses the InterPlanetary File System, aka IPFS, to store the rest of information in a decentralized way (too).</p>
+
+<p><img src="http://localhost:4000/assets/images/myproject_eth2.png" style="display: block; margin: auto; max-width:80%; height:auto; " /></p>
+
+<p>There’s some files in the offer creation process which are stored on IPFS. We only store in the blockchain the final IPFS hash, which links to the rest of this files chain.</p>
+
+<h2 id="why-ipfs">Why IPFS?</h2>
+
+<p>Let’s make some estimate, bearing in mind that storing 8 bytes has a cost of 20,000 gas; having each gas an equivalent of 4 gwei.</p>
+
+<ul>
+  <li>A 8 bytes transaction for 20,000 gas x 4 gwei/gas =&gt; 8 bytes would cost 80,000 gwei.</li>
+  <li>So, talking about kB instead of B, it would cost 10,000,000 of gwei (or ,01 Ether).</li>
+  <li>,01 ETH/kB x 1,000 kB =&gt; 10 ETH para almacenar 1 Mb.</li>
+  <li>Nowdays, an Ether is aprox. €164, so storing 1 Mb of information in a blockchain would cost €1,640.</li>
+</ul>
+
+<p>With all this information, we can see clearly that, storing 1 GB of information (a very little amount nowadays) in a blockchain would cost <strong>€1,640,000</strong>!! (OMG). So, blockchain and IPFS are a very common couple in this ecosystem.</p>
+
+<h2 id="more-information">More information</h2>
+
+<p>This project was presented on June 25, 2019 in the Escuela Superior de Ingeniería at Universidad de Cádiz, obtaining the highest score (10/10). If you are interested in knowing the details around this project, you can visit the following links:</p>
+
+<ul>
+  <li><a href="https://drive.google.com/file/d/1_DnLsGQUuMttBdkgs425984ZnpjjX-s0/view?usp=sharing">Project documentation</a>: a 129 page document explaining with all details all about this project.</li>
+  <li><a href="https://github.com/luisrozo/MedicalDataMarket">GitHub repository</a>: check how technologies such as blockchain, IPFS and ReactJS live together in a same system.</li>
+</ul>
+
+</div>
+	</article>
+</div><!-- Footer -->
+<div id="footer">
+
+  <!-- Copyright -->
+  <ul class="copyright">
+    <li>&copy; Luis Rozo. All rights reserved.</li>
+    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+    <li>Jekyll integration: <a href="https://chrisbobbe.github.io/">Chris Bobbe</a></li>
+  </ul>
+  <div class="rc-scout"></div>
+</div>
+</body>
+</html>

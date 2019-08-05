@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<!--
+Prologue by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+Jekyll integration by Chris Bobbe | chrisbobbe.github.io
+-->
+<html><head><!-- Robots -->
+  <meta name="robots" content="index, follow" /><link rel="canonical" href="http://localhost:4000/2019/08/05/tk-stats.html" /><!-- Title, description, author --><title>Terminkalender Stats | Luis Rozo - Software Engineer</title>
+  <meta name="description" content="Personal website of Luis Rozo." />
+  <meta name="author" content="Luis Rozo" />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Terminkalender Stats | Luis Rozo - Software Engineer" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="http://localhost:4000/assets/images/avatar.png" />
+  <meta property="og:url" content="http://localhost:4000/2019/08/05/tk-stats.html" />
+  <meta property="og:site_name" content="Luis Rozo" />
+  <meta property="og:description" content="Personal website of Luis Rozo." />
+  
+  <!-- Styles -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js" defer></script><![endif]-->
+  <link rel="stylesheet" href="/assets/css/main.css" />
+  <!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css" /><![endif]-->
+  <!--[if lte IE 9]><link rel="stylesheet" href="/assets/css/ie9.css" /><![endif]-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" defer></script>
+  <script src="/assets/js/jquery.scrolly.min.js" defer></script>
+  <script src="/assets/js/jquery.scrollzer.min.js" defer></script>
+  <script src="/assets/js/skel.min.js" defer></script>
+  <script src="/assets/js/util.js" defer></script>
+  <!--[if lte IE 8]><script src="/assets/js/ie/respond.min.js" defer></script><![endif]-->
+  <script src="/assets/js/main.js" defer></script>
+
+</head><body><!-- Header -->
+<div id="header">
+  <div class="top"><!-- Logo -->
+<div id="logo">
+  <a href="http://localhost:4000/" id="home-link">
+    <span class="image avatar48"><img src="/assets/images/avatar.png" alt="Avatar of Luis Rozo" /></span>
+    <h1 id="title">Luis Rozo</h1>
+    <p>Software Engineer</p>
+  </a>
+</div><!-- Nav -->
+<nav id="nav">
+  <ul><li><a href="http://localhost:4000/" id="home-link">
+            <span class="icon fa-home">Home</span>
+          </a></li><li><a href="http://localhost:4000/blog.html" id="luis-s-blog-link">
+            <span class="icon fa-pencil">Luis's Blog</span>
+          </a></li><li><a href="http://localhost:4000/skills" id="my-skills-link">
+            <span class="icon fa-graduation-cap">My Skills</span>
+          </a></li></ul>
+</nav></div>
+  <div class="bottom"><!-- Social Icons -->
+<ul class="icons"><li><a href="https://twitter.com/luisrozo96" class="icon-b fa-twitter"><span class="label">Twitter</span></a></li><li><a href="https://www.linkedin.com/in/luis-gonzaga-rozo-bueno-0299b7166/" class="icon-b fa-linkedin-in"><span class="label">LinkedIn</span></a></li><li><a href="https://github.com/luisrozo" class="icon-b fa-github"><span class="label">GitHub</span></a></li><li><a href="mailto:luisgonzagarozo@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li></ul>
+</div>
+</div>
+<!-- Main -->
+<div id="main">
+	<!-- Post -->
+	<article class="shade-two">
+	  <div class="container">
+			<header>
+				<h2>Terminkalender Stats</h2>
+				<p>Luis, 05 August 2019</p>
+			</header><p>During a degree, it is common to do some business practices in order to apply the knowledge you have obtained in a real-world context. In my case, during the third year of my Computer Science degree, I was focused on this project, which I’m going to explain for a while.</p>
+
+<center><p>
+    <figure class="image">
+        <img src="/assets/images/myproject_tkstats.png" alt="" />
+        <figcaption><i></i></figcaption>
+    </figure>
+</p></center>
+
+<p><strong><em>Terminkalender</em></strong> is a project driven by Universidad de Cádiz. As a final project of his degree, the student Javier Osuna <a href="https://github.com/javosuher/Terminkalender">developed a libGDX app</a> which runs on PC as well as Android mobile phones. This app has an educational purpose: it would be used by students of Universidad de Cádiz <strong>German</strong> subject. They would have to use the <em>in-app</em> chat to meet other classmates, agreeing what, when and who to do with, trying to write on German applying language techniques learnt through subject temary.</p>
+
+<center><p>
+    <figure class="image">
+        <img src="/assets/images/my_projects_tk.png" alt="Terminkalender screenshot with some activities" />
+        <figcaption><i>Terminkalender screenshot with some activities</i></figcaption>
+    </figure>
+</p></center>
+
+<p>My contribution to this project was based on, in addition to implement some features to the app, making a deep data analysis of what students talked about.</p>
+
+<p>I had to develop a Python script, which does the following tasks:</p>
+
+<ul>
+  <li>
+    <p>Preprocess the entire logs produced by the application: due to the fact that we’re talking about a chating app, extracting conclusions of how students use German language is a pretty difficult task; so try to unify the most of the chats was mandatory (such as simplify all <em>laughts</em> - I mean haha, jajjaja, jaajaja, jejjeje, hihihi… - to “jajaja” in order to count how many times students had fun).</p>
+  </li>
+  <li>
+    <p>Keep track of more than 20 different metrics from three different perspectives: globally, per student and per student pair.</p>
+  </li>
+  <li>
+    <p>Produce an output which reflects every single metric.</p>
+  </li>
+</ul>
+
+<p>Moreover, there was a paper version of the app, making interesting to compare the results between app and paper. Paper chats was reflected in Excel files, so I had to adapt the script to read the same information but through a spreadsheet instead of a <em>log.txt</em>.</p>
+
+<p>Thanks to this, the Universidad de Cádiz IT Deparment could make an study about the impact of the application in students, proving that this initiative helps students to learn German.</p>
+
+<p>If you are interested in knowing more about this project, you can visit <a href="https://github.com/luisrozo/tk-stats">my GitHub repo</a>, where you can find the source code of the Python scripts, the details of preprocessing stage and metrics analyzed, and so much more!</p>
+</div>
+	</article>
+</div><!-- Footer -->
+<div id="footer">
+
+  <!-- Copyright -->
+  <ul class="copyright">
+    <li>&copy; Luis Rozo. All rights reserved.</li>
+    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+    <li>Jekyll integration: <a href="https://chrisbobbe.github.io/">Chris Bobbe</a></li>
+  </ul>
+  <div class="rc-scout"></div>
+</div>
+</body>
+</html>

@@ -1,4 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-07-04T10:07:58+02:00</updated><id>http://localhost:4000/</id><title type="html">Luis Rozo</title><subtitle>Personal website of Luis Rozo.</subtitle><author><name>Luis Rozo</name></author><entry><title type="html">Aplicación descentralizada basada en Ethereum para la compra venta de datos personales</title><link href="http://localhost:4000/2019/07/04/ethereum-dapp.html" rel="alternate" type="text/html" title="Aplicación descentralizada basada en Ethereum para la compra venta de datos personales" /><published>2019-07-04T00:00:00+02:00</published><updated>2019-07-04T00:00:00+02:00</updated><id>http://localhost:4000/2019/07/04/ethereum-dapp</id><content type="html" xml:base="http://localhost:4000/2019/07/04/ethereum-dapp.html">&lt;p&gt;I’m going to talk about this project, which represents the final project of my degree.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-08-05T10:27:04+02:00</updated><id>http://localhost:4000/</id><title type="html">Luis Rozo</title><subtitle>Personal website of Luis Rozo.</subtitle><author><name>Luis Rozo</name></author><entry><title type="html">Terminkalender Stats</title><link href="http://localhost:4000/2019/08/05/tk-stats.html" rel="alternate" type="text/html" title="Terminkalender Stats" /><published>2019-08-05T00:00:00+02:00</published><updated>2019-08-05T00:00:00+02:00</updated><id>http://localhost:4000/2019/08/05/tk-stats</id><content type="html" xml:base="http://localhost:4000/2019/08/05/tk-stats.html">&lt;p&gt;During a degree, it is common to do some business practices in order to apply the knowledge you have obtained in a real-world context. In my case, during the third year of my Computer Science degree, I was focused on this project, which I’m going to explain for a while.&lt;/p&gt;
+
+&lt;center&gt;&lt;p&gt;
+    &lt;figure class=&quot;image&quot;&gt;
+        &lt;img src=&quot;/assets/images/myproject_tkstats.png&quot; alt=&quot;&quot; /&gt;
+        &lt;figcaption&gt;&lt;i&gt;&lt;/i&gt;&lt;/figcaption&gt;
+    &lt;/figure&gt;
+&lt;/p&gt;&lt;/center&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Terminkalender&lt;/em&gt;&lt;/strong&gt; is a project driven by Universidad de Cádiz. As a final project of his degree, the student Javier Osuna &lt;a href=&quot;https://github.com/javosuher/Terminkalender&quot;&gt;developed a libGDX app&lt;/a&gt; which runs on PC as well as Android mobile phones. This app has an educational purpose: it would be used by students of Universidad de Cádiz &lt;strong&gt;German&lt;/strong&gt; subject. They would have to use the &lt;em&gt;in-app&lt;/em&gt; chat to meet other classmates, agreeing what, when and who to do with, trying to write on German applying language techniques learnt through subject temary.&lt;/p&gt;
+
+&lt;center&gt;&lt;p&gt;
+    &lt;figure class=&quot;image&quot;&gt;
+        &lt;img src=&quot;/assets/images/my_projects_tk.png&quot; alt=&quot;Terminkalender screenshot with some activities&quot; /&gt;
+        &lt;figcaption&gt;&lt;i&gt;Terminkalender screenshot with some activities&lt;/i&gt;&lt;/figcaption&gt;
+    &lt;/figure&gt;
+&lt;/p&gt;&lt;/center&gt;
+
+&lt;p&gt;My contribution to this project was based on, in addition to implement some features to the app, making a deep data analysis of what students talked about.&lt;/p&gt;
+
+&lt;p&gt;I had to develop a Python script, which does the following tasks:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Preprocess the entire logs produced by the application: due to the fact that we’re talking about a chating app, extracting conclusions of how students use German language is a pretty difficult task; so try to unify the most of the chats was mandatory (such as simplify all &lt;em&gt;laughts&lt;/em&gt; - I mean haha, jajjaja, jaajaja, jejjeje, hihihi… - to “jajaja” in order to count how many times students had fun).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Keep track of more than 20 different metrics from three different perspectives: globally, per student and per student pair.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Produce an output which reflects every single metric.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Moreover, there was a paper version of the app, making interesting to compare the results between app and paper. Paper chats was reflected in Excel files, so I had to adapt the script to read the same information but through a spreadsheet instead of a &lt;em&gt;log.txt&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Thanks to this, the Universidad de Cádiz IT Deparment could make an study about the impact of the application in students, proving that this initiative helps students to learn German.&lt;/p&gt;
+
+&lt;p&gt;If you are interested in knowing more about this project, you can visit &lt;a href=&quot;https://github.com/luisrozo/tk-stats&quot;&gt;my GitHub repo&lt;/a&gt;, where you can find the source code of the Python scripts, the details of preprocessing stage and metrics analyzed, and so much more!&lt;/p&gt;</content><author><name>Luis</name></author><summary type="html">During a degree, it is common to do some business practices in order to apply the knowledge you have obtained in a real-world context. In my case, during the third year of my Computer Science degree, I was focused on this project, which I’m going to explain for a while.</summary></entry><entry><title type="html">Aplicación descentralizada basada en Ethereum para la compra venta de datos personales</title><link href="http://localhost:4000/2019/07/04/ethereum-dapp.html" rel="alternate" type="text/html" title="Aplicación descentralizada basada en Ethereum para la compra venta de datos personales" /><published>2019-07-04T00:00:00+02:00</published><updated>2019-07-04T00:00:00+02:00</updated><id>http://localhost:4000/2019/07/04/ethereum-dapp</id><content type="html" xml:base="http://localhost:4000/2019/07/04/ethereum-dapp.html">&lt;p&gt;I’m going to talk about this project, which represents the final project of my degree.&lt;/p&gt;
 
 &lt;p&gt;I developed a decentralized application (or dApp) based on &lt;strong&gt;blockchain&lt;/strong&gt;, especially using Ethereum ecosystem. Other technologies were used too, such as ReactJS, IPFS, etc.&lt;/p&gt;
 
